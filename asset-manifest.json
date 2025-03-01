@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/peaceHnomecare/static/css/main.1da78389.css",
+    "main.js": "/peaceHnomecare/static/js/main.34105d0e.js",
+    "static/js/453.195b869a.chunk.js": "/peaceHnomecare/static/js/453.195b869a.chunk.js",
+    "static/media/Photo.jpg": "/peaceHnomecare/static/media/Photo.a95710ea6166b6f39fed.jpg",
+    "static/media/Loggo.jpg": "/peaceHnomecare/static/media/Loggo.3c87ad83a6fb9eb250ef.jpg",
+    "index.html": "/peaceHnomecare/index.html",
+    "main.1da78389.css.map": "/peaceHnomecare/static/css/main.1da78389.css.map",
+    "main.34105d0e.js.map": "/peaceHnomecare/static/js/main.34105d0e.js.map",
+    "453.195b869a.chunk.js.map": "/peaceHnomecare/static/js/453.195b869a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1da78389.css",
+    "static/js/main.34105d0e.js"
+  ]
+}
