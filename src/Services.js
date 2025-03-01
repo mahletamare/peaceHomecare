@@ -24,60 +24,46 @@ function Services() {
 
       <style>
         {`
-          .services-box {
-            background-color: rgba(255, 255, 255, 0.9);
-            padding: 25px;
-            border-radius: 12px;
-            max-width: 600px; /* Keeps original laptop size */
-            text-align: left;
-            line-height: 1.8;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-            width: 100%; /* Ensures responsiveness */
-          }
+         .services-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      max-width: 600px;
+      width: 90%; /* Adjusts width dynamically */
+      text-align: left;
+      line-height: 1.8;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
 
-          .services-box h2 {
-            text-align: center;
-            margin-bottom: 15px;
-            color: #333;
-          }
+    .services-box h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #333;
+    }
 
-          .services-box ul {
-            list-style-type: none;
-            padding: 0;
-          }
+    .services-box ul {
+      list-style-type: none;
+      padding: 0;
+    }
 
-          .services-box li {
-            margin-bottom: 15px;
-          }
+    .services-box li {
+      margin-bottom: 15px;
+    }
 
-          /* Responsive Design */
-          @media (max-width: 768px) {
-            .services-box {
-              max-width: 90%; /* Adjusts width for smaller screens */
-              padding: 20px;
-            }
-          }
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .services-box {
+        max-width: 95%; /* Slightly wider for tablets */
+        padding: 20px;
+      }
+    }
 
-          @media (max-width: 480px) {
-            .services-box {
-              max-width: 95%; /* Even smaller for very small screens */
-              padding: 15px;
-            }
-          }
-
-          .services-section {
-            background-size: cover;
-            background-position: center;
-            min-height: 100vh; /* Prevents content cutoff */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 20px;
-            color: #333;
-            width: 100%;
-            overflow: hidden; /* Prevents content from going out of bounds */
-          }
+    @media (max-width: 480px) {
+      .services-box {
+        max-width: 100%; /* Full width for small screens */
+        padding: 15px;
+      }
+    }
         `}
       </style>
     </section>
@@ -88,15 +74,15 @@ const sectionStyles = {
   backgroundImage: `url(${businessImage})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
-  minHeight: "100vh", // Ensures full height without cutting content
+  minHeight: "100vh", // Ensures full height
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
   padding: "20px",
   color: "#333",
-  width: "100%",
-  overflow: "hidden", // Prevents image and content from overflowing
+  //width: "100%", // Prevents overflow
 };
+
 
 export default Services;
