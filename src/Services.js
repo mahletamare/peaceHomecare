@@ -3,7 +3,7 @@ import businessImage from "./Photo.jpg";
 
 function Services() {
   return (
-    <section className="content" style={sectionStyles}>
+    <section className="content services-section" style={sectionStyles}>
       <div className="services-box">
         <h2>Our Services</h2>
         <ul>
@@ -26,9 +26,9 @@ function Services() {
         {`
           .services-box {
             background-color: rgba(255, 255, 255, 0.9);
-            padding: 25px;
+            padding: 5%;
             border-radius: 12px;
-            max-width: 600px;
+            max-width: 90%; /* Make it responsive */
             text-align: left;
             line-height: 1.8;
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
@@ -48,6 +48,27 @@ function Services() {
           .services-box li {
             margin-bottom: 15px;
           }
+
+          /* Responsive Design */
+          @media (max-width: 768px) {
+            .services-box {
+              max-width: 100%; /* Full width on smaller screens */
+              padding: 8%;
+            }
+          }
+
+          .services-section {
+            background-size: cover;
+            background-position: center;
+            min-height: 100vh; /* Prevents content cutoff */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+            color: #333;
+            width: 100%;
+          }
         `}
       </style>
     </section>
@@ -58,13 +79,14 @@ const sectionStyles = {
   backgroundImage: `url(${businessImage})`,
   backgroundSize: "cover",
   backgroundPosition: "center",
-  height: "100vh",
+  minHeight: "100vh", // Changed from height to minHeight for better responsiveness
   display: "flex",
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  padding: "20px",
+  padding: "5%",
   color: "#333",
+  width: "100%", // Ensures full width
 };
 
 export default Services;
