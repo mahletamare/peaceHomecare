@@ -2,8 +2,8 @@ import React from "react";
 
 function About() {
   return (
-    <section className="content">
-      <div className="about-container">
+    <section className="content about-section" style={sectionStyles}>
+      <div className="about-box">
         <h2>About Us</h2>
         <p>
           At Peace & Comfort Homecare, we are dedicated to providing compassionate and professional home care services tailored to meet the unique needs of our clients.
@@ -24,31 +24,58 @@ function About() {
 
       <style>
         {`
-          .about-container {
+          .about-box {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 800px;
+            width: 90%;
             text-align: left;
-            margin: 40px auto;
-            padding: 25px;
-            max-width: 700px;
             line-height: 1.8;
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
           }
 
-          .about-container h2 {
+          .about-box h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             color: #333;
           }
 
-          .about-container p {
-            margin-bottom: 15px;
+          .about-box p {
+            margin-bottom: 10px;
             color: #555;
+          }
+
+          /* Responsive Adjustments */
+          @media (max-width: 768px) {
+            .about-box {
+              max-width: 95%;
+              padding: 25px;
+            }
+          }
+
+          @media (max-width: 480px) {
+            .about-box {
+              max-width: 100%;
+              padding: 20px;
+            }
           }
         `}
       </style>
     </section>
   );
 }
+
+const sectionStyles = {
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  minHeight: "100vh", // Ensures full height
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center",
+  padding: "20px",
+  color: "#333",
+};
 
 export default About;
