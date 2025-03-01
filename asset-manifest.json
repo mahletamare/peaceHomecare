@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/peaceHomecare/static/css/main.1da78389.css",
-    "main.js": "/peaceHomecare/static/js/main.3ef09921.js",
+    "main.js": "/peaceHomecare/static/js/main.90fff14f.js",
     "static/js/453.195b869a.chunk.js": "/peaceHomecare/static/js/453.195b869a.chunk.js",
     "static/media/Photo.jpg": "/peaceHomecare/static/media/Photo.a95710ea6166b6f39fed.jpg",
     "static/media/Loggo.jpg": "/peaceHomecare/static/media/Loggo.3c87ad83a6fb9eb250ef.jpg",
     "index.html": "/peaceHomecare/index.html",
     "main.1da78389.css.map": "/peaceHomecare/static/css/main.1da78389.css.map",
-    "main.3ef09921.js.map": "/peaceHomecare/static/js/main.3ef09921.js.map",
+    "main.90fff14f.js.map": "/peaceHomecare/static/js/main.90fff14f.js.map",
     "453.195b869a.chunk.js.map": "/peaceHomecare/static/js/453.195b869a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1da78389.css",
-    "static/js/main.3ef09921.js"
+    "static/js/main.90fff14f.js"
   ]
 }
